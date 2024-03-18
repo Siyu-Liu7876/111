@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- 添加浏览器tab中的小图标 / add the little icon for your browser tab-->
+    <link rel="icon" 
+    href="老虎.jpg">
+  
+    <style>
+        body{
+        background-color: black;
+        background-image: url(226441f74a48ba006de56559d460f53b.gif);
+    }
+    .text1{
+        position: absolute;
+        left: 50px;
+        width: fit-content;
+        color: white;
+
+    }
+    .text2{
+        position: absolute;
+        left: 200px;
+        top: 524px;
+        width: fit-content;
+        color: white;
+
+    }
+    .text3{
+        position: absolute;
+        right: 80px;
+        bottom: 100px;
+        width: fit-content;
+        color: white;
+
+    }
+    .text4{
+        position: absolute;
+        left: 600px;
+        bottom: 300px;
+        width: fit-content;
+        color: white;
+    }
+    .e{
+        position: fixed;
+        left: 60px;
+        top: 80px;
+    }
+    .h{
+        position: fixed;
+        left: 456px;
+        top: 85px;
+    }
+    .b{
+        position: fixed;
+        left: 380px;
+        top: 754px;
+    }
+    .s{
+        position: fixed;
+        left: 376px;
+        top: 453px;
+    }
+    .k{
+        position: fixed;
+        left: 421px;
+        top: 41px;
+    }
+    .i{
+        position: fixed;
+        left: 736px;
+        top: 393px;
+    }
+    .a{
+        position: fixed;
+        left: 297px;
+        top: 735px;
+    }
+    .m{
+        position: fixed;
+        left: 9px;
+        top: 735px;
+    }
+    .d{
+        position: fixed;
+        left: 324px;
+        top: 812px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="text1">
+    <p>This is a trap.</p>
+</div>
+<div class="text2">
+    <h4>Bias</h4>
+</div>
+<div class="text3">
+<h2>Realizing biases</h2>
+</div>
+<div class="text4">
+    <h5>Do you know algorithm bias?</h5>
+</div>
+
+    <!-- 可填的表格、勾选选项 -->
+    <div class="fill">
+      <input type="checkbox">
+      </div>     
+
+    <!-- 两个不同的 button，分别用两个 onlick的指令名称；two different buttons with different onclick names-->
+    <div class="e"><button class="like_button" onclick="fstButtonPressed()">e</button></div>
+    <div class="h"><button class="talk_button" onclick="sndButtonPressed()">h</button></div>
+    <div class="b"><button class="like_button" onclick="thdButtonPressed()">b</button></div>
+    <div class="s"><button class="like_button" onclick="fthButtonPressed()">s</button></div>
+    <div class="k"><button class="like_button" onclick="fithButtonPressed()">k</button></div>
+    <div class="i"><button class="like_button" onclick="sthButtonPressed()">i</button></div>
+    <div class="a"><button class="like_button" onclick="sethButtonPressed()">a</button></div>
+    <div class="m"><button class="like_button" onclick="ethButtonPressed()">m</button></div>
+    <div class="d"><button class="like_button" onclick="nthButtonPressed()">d</button></div>
+
+    <img src="中产阶级.jpg" style="position:absolute; top: 30px; right: 0; width: 200px;">
+    <script>
+      //加页面提示/add alert note to the page
+      alert("Wake up"); 
+
+      // 按 "talk_button" 改变 / use "talk_button" to change: 
+      function sthButtonPressed() {
+
+        // 改变p元素的innerText；to change the content of the p element's text
+        let p = document.querySelector("p")
+        p.innerText = "You may label them with prejudice without consciousness."
+      }
+      let myImage = document.querySelector("img")
+            myImage.src = "日本战后.jpg"
+            myImage.width = 150; 
+let counter = 0 
+
+function sethButtonPressed(){
+counter = counter +1 
+console.log(counter)
+
+let h4 = document.querySelector('h4')
+
+if(counter == 1){
+  h4.innerText = "gender"
+  let myImage = document.querySelector("img")
+            myImage.src = "南方人冬季.jpg"
+            myImage.width = 150; 
+}
+if(counter == 2){
+  h4.innerText = "pegan"
+  let myImage = document.querySelector("img")
+            myImage.src = "福建人.jpg"
+            myImage.width = 150; 
+}
+if(counter == 3){
+  h4.innerText = "slut"
+}
+if(counter == 4){
+  h4.innerText = "migrate"
+}
+if(counter == 5){
+  h4.innerText = "racialism"
+
+}
+if(counter == 6){
+  h4.innerText = "sexual preference"
+  window.open("mark.html", "name", "popup,left=200,bottom=200,width=200,height=300")
+  counter = 0
+
+}
+}
+
+
+function fthButtonPressed(){
+counter = counter +1 
+console.log(counter)
+
+let h2 = document.querySelector('h2')
+
+if(counter == 1){
+  h2.innerText = "Think of some other words with bias"
+}
+if(counter == 2){
+  h2.innerText = "Think how you can make people aware of the bias"
+  let myImage = document.querySelector("img")
+            myImage.src = "黑人.jpg"
+            myImage.width = 150; 
+}
+if(counter == 3){
+  h2.innerText = "Make a questionnaire like this"
+  window.open("bias.html", "name", "popup,left=200,bottom=200,width=300,height=100")
+  counter = 0
+}
+}
+
+function thdButtonPressed(){
+counter = counter +1 
+console.log(counter)
+
+let h5 = document.querySelector('h5')
+
+if(counter == 1){
+  h5.innerText = "AI decision-making relies on learning human decision-making preferences"
+}
+if(counter == 2){
+  h5.innerText = "Existing social biases are brought into the dataset"
+
+}
+if(counter == 3){
+  h5.innerText = "subjective value judgments are needed to classify the data"
+  let myImage = document.querySelector("img")
+            myImage.src = "贫富脸.jpg"
+            myImage.width = 150; 
+}
+if(counter == 4){
+  h5.innerText = "a chain of biases has emerged"
+  alert("Actually, designing the questionnaire is a bias")
+  counter = 0
+}
+}
+      // 用like_button 切换成不同的文字；use like_button to switch to different texts 
+      // 点击1、2、3下后再回到0，循环 / clicking once, twice, three times and back to 0, repeat the loop
+    //   let counter = 0 
+
+    //     function sethButtonPressed(){
+    //     counter = counter +1 
+    //     console.log(counter)
+
+    //     let h4 = document.querySelector('h4')
+
+    //     if(counter == 1){
+    //       h4.innerText = "gender"
+    //     }
+    //     if(counter == 2){
+    //       h4.innerText = "pegan"
+    //     }
+    //     if(counter == 3){
+    //       h4.innerText = "slut"
+    //       counter = 0
+    //     }
+    //     if(counter == 4){
+    //       h4.innerText = "migrate"
+    //     }
+    //     if(counter == 5){
+    //       h4.innerText = "regional discrimination"
+    //     }
+    //     if(counter == 6){
+    //       h4.innerText = "racialism"
+    //       counter = 0
+    //     }
+    //     if(counter == 7){
+    //       h4.innerText = "sexual preference"
+    //     }
+    //   }
+    // }
+
+// let counter2 = 0 
+
+// function thdButtonPressed(){
+// counter2 = counter2 +1 
+// console.log(counter2)
+
+// let h2= document.querySelector('h2')
+
+// if(counter2 == 1){
+//   h4.innerText = "Think of some other words with bias"
+// }
+// if(counter2 == 2){
+//   h4.innerText = "Think how you can make people aware of the bias"
+// }
+// if(counter2 == 3){
+//   h4.innerText = "Make a questionnaire like this"
+//   counter = 0
+// }
+// }
+
+// let counter3 = 0 
+
+// function fthPressed(){
+// counter3 = counter3 +1 
+// console.log(counter3)
+
+// let h5 = document.querySelector('h5')
+
+// if(counter3 == 1){
+//   h1.innerText = "AI decision-making relies on learning human decision-making preferences"
+// }
+// if(counter3 == 2){
+//   h1.innerText = "Existing social biases are brought into the dataset;subjective value judgments are needed to classify the data, which becomes another major source of bias."
+// }
+// if(counter3 == 3){
+//   h1.innerText = "a chain of biases has emerged"
+//   alert("Actually, designing the questionnaire is a bias");
+//   counter = 0
+// }
+// }
+    </script>
+       <div class="button"><a href="ipadress.html"><button style="position: fixed; right: 0;">Continue</button></a></div>
+
+
+  </body>
+</html>

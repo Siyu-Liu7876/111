@@ -1,0 +1,41 @@
+</head>
+<body>
+  <h3>We mark people who are different from us</h3>
+<div id="mousehover"></div>
+
+</body>
+
+<style>
+#mousehover {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* Adjust the number of columns as needed */
+    grid-gap: 2px;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #cccccc;
+  }
+  
+  .cell:hover {
+    background-color: red; /* Change the color on hover */
+  }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const heatmap = document.getElementById("mousehover");
+  
+    const numRows = 10; // Number of rows
+    const numCols = 10; // Number of columns
+  
+    for (let i = 0; i < numRows; i++) {
+      for (let j = 0; j < numCols; j++) {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        heatmap.appendChild(cell);
+      }
+    }
+  });
+</script>
